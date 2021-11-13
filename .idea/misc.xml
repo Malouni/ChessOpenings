@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/titor/OneDrive/Desktop/AndroidStudio/Project-master/Project-master/app/src/main/res/layout/about_us.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/titor/OneDrive/Desktop/AndroidStudio/Project-master/Project-master/app/src/main/res/layout/activity_carokan_opening.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/titor/OneDrive/Desktop/AndroidStudio/Project-master/Project-master/app/src/main/res/layout/activity_indian_opening.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/titor/OneDrive/Desktop/AndroidStudio/Project-master/Project-master/app/src/main/res/layout/activity_queens_opening.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/titor/OneDrive/Desktop/AndroidStudio/Project-master/Project-master/app/src/main/res/layout/activity_sicilian_opening.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#069A8E"
+    tools:context=".italian_practice">
+
+    <Button
+        android:id="@+id/back_pr_italian"
+        android:layout_width="90dp"
+        android:layout_height="36dp"
+        android:backgroundTint="#006993"
+        android:onClick="onClick_pr_italian_back"
+        android:text="Back"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/chess_board"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        app:columnCount="8"
+        app:columnOrderPreserved="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:rowCount="8">
+
+        <ImageButton
+            android:id="@+id/a8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_3"
+            android:longClickable="false"
+            android:tag="7"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/b8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_5"
+            android:tag="15"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/c8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_8"
+            android:tag="23"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/d8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_9"
+            android:tag="31"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/e8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_12"
+            android:tag="39"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/f8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_8"
+            android:tag="47"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/g8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_5"
+            android:tag="55"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/h8"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_3"
+            android:tag="63"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/a7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contextClickable="false"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_a7"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:tag="6"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/b7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_b7"
+            android:tag="14"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/c7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_c7"
+            android:tag="22"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/d7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_d7"
+            android:tag="30"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/e7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_e7"
+            android:tag="38"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/f7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_f7"
+            android:tag="46"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/g7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_g7"
+            android:tag="54"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/h7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_1"
+            android:onClick="onCLick_Italian_Practice_h7"
+            android:tag="62"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/a6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_a6"
+            android:tag="5"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/b6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_b6"
+            android:tag="13"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/c6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_c6"
+            android:tag="21"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/d6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_d6"
+            android:tag="29"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/e6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_e6"
+            android:tag="37"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/f6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_f6"
+            android:tag="45"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/g6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_g6"
+            android:tag="53"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/h6"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_h6"
+            android:tag="61"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/a5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_a5"
+            android:tag="4"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/b5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_b5"
+            android:tag="12"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/c5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_c5"
+            android:tag="20"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/d5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_d5"
+            android:tag="28"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/e5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_e5"
+            android:tag="36"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/f5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_f5"
+            android:tag="44"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/g5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_g5"
+            android:tag="52"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/h5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_h5"
+            android:tag="60"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/a4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_a4"
+            android:tag="3"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/b4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_b4"
+            android:tag="11"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/c4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_c4"
+            android:tag="19"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/d4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_d4"
+            android:tag="27"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/e4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_e4"
+            android:tag="35"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/f4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_f4"
+            android:tag="43"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/g4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_g4"
+            android:tag="51"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/h4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_h4"
+            android:tag="59"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/a3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_a3"
+            android:tag="2"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_b3"
+            android:tag="10"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_c3"
+            android:tag="18"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/d3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_d3"
+            android:tag="26"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/e3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_e3"
+            android:tag="34"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/f3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_f3"
+            android:tag="42"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/g3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_g3"
+            android:tag="50"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/h3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="onCLick_Italian_Practice_h3"
+            android:tag="58"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/a2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_a2"
+            android:tag="1"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_b2"
+            android:tag="9"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_c2"
+            android:tag="17"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/d2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_d2"
+            android:tag="25"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/e2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_e2"
+            android:tag="33"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/f2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_f2"
+            android:tag="41"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/g2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_g2"
+            android:tag="49"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/h2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_2"
+            android:onClick="onCLick_Italian_Practice_h2"
+            android:tag="57"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/a1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_4"
+            android:onClick="onCLick_Italian_Practice_a1"
+            android:tag="0"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_6"
+            android:onClick="onCLick_Italian_Practice_b1"
+            android:tag="8"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_7"
+            android:onClick="onCLick_Italian_Practice_c1"
+            android:tag="16"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/d1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_10"
+            android:onClick="onCLick_Italian_Practice_d1"
+            android:tag="24"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/e1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_11"
+            android:onClick="onCLick_Italian_Practice_e1"
+            android:tag="32"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/f1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_7"
+            android:onClick="onCLick_Italian_Practice_f1"
+            android:tag="40"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+
+        <ImageButton
+            android:id="@+id/g1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_6"
+            android:onClick="onCLick_Italian_Practice_g1"
+            android:tag="48"
+            app:srcCompat="@drawable/green_cell" />
+
+        <ImageButton
+            android:id="@+id/h1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="@drawable/piece_4"
+            android:onClick="onCLick_Italian_Practice_h1"
+            android:tag="56"
+            android:tint="#FFFFFF"
+            app:srcCompat="@drawable/blacl_cell" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/think"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chess_board"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@drawable/think" />
+
+    <ImageView
+        android:id="@+id/concl"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chess_board"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/conclusion_pic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

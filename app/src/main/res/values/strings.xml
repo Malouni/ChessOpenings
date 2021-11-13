@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="scroll"><![CDATA[<-Scroll->]]></string>
+    <string name="who_we_are">WHO WE ARE.</string>
+    <string name="in_the_game_of_chess_the_opening_refers_to_the_initial_moves_of_the_game_there_are_dozens_of_different_types_of_openings_and_many_variants_to_choose_from_according_to_extensive_research_openings_have_a_major_impact_on_the_outcome_of_the_game_we_are_aiming_to_provide_the_fundamentals_of_openings_in_chess_by_creating_a_platform_in_which_players_can_learn_practice_and_master_the_art_after_completion_of_all_challenges_players_will_easily_recognize_patterns_and_read_opponents">In the game of chess, the opening refers to the initial moves of the game. There are dozens of different types of openings and many variants to choose from. According to extensive research, openings have a major impact on the outcome of the game. We are aiming to provide the fundamentals of openings in chess by creating a platform in which players can learn, practice and master the art. After completion of all challenges, players will easily recognize patterns and read opponents.</string>
+    <string name="about_the">About the</string>
+    <string name="developers">Developers</string>
+    <string name="back">Back</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="about_us">About Us</string>
+    <string name="practice">Practice</string>
+    <string name="openings">Openings</string>
+    <string name="choose_opening_that_you_want_to_learn">Choose opening that you want to learn</string>
+    <string name="choose_opening_that_you_want_to_practice">Choose opening that you want to practice</string>
+    <string name="kd2">KD2</string>
+</resources>
